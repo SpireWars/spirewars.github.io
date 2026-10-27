@@ -4,13 +4,16 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Spire Wars – Strategia a torri in tempo reale</title>
-  <meta name="description" content="Guida ondate di centinaia di soldatini, conquista la scacchiera torre dopo torre. 1 contro 1, 2 contro 2, tutti contro tutti, anche online." />
+  <meta name="description" content="Guida ondate di centinaia di soldatini e conquista la scacchiera torre dopo torre. Avventura infinita con boss, tutorial guidato, 1 contro 1, 2 contro 2 e tutti contro tutti online." />
   <meta name="theme-color" content="#0d1a33" />
+  <meta property="og:type" content="website" />
   <meta property="og:title" content="Spire Wars – Strategia a torri in tempo reale" />
-  <meta property="og:description" content="Guida ondate di centinaia di soldatini, conquista la scacchiera torre dopo torre. 1 contro 1, 2 contro 2, tutti contro tutti, anche online." />
+  <meta property="og:description" content="Guida ondate di centinaia di soldatini e conquista la scacchiera torre dopo torre. Avventura infinita con boss, tutorial guidato, 1 contro 1, 2 contro 2 e tutti contro tutti online." />
   <meta property="og:image" content="https://spirewars.github.io/assets/social.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" href="favicon.png" />
   <link rel="alternate" hreflang="en" href="en/index.html" />
+  <link rel="preload" href="assets/fonts/LilitaOne-Regular.ttf" as="font" type="font/ttf" crossorigin />
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
@@ -18,9 +21,10 @@
     <div class="wrap">
       <a class="brand" href="./"><img src="assets/icon-64.png" alt="" width="40" height="40" /><span>Spire Wars</span></a>
       <nav class="nav" aria-label="Principale">
-        <a href="./" aria-current="page">Home</a>
+        <a class="hide-sm" href="#gioco">Il gioco</a>
+        <a class="hide-sm" href="#avventura">Avventura</a>
+        <a class="hide-sm" href="#novita">Novità</a>
         <a href="privacy.html">Privacy</a>
-        <a href="delete-account.html">Elimina account</a>
         <a class="lang" href="en/index.html" hreflang="en" lang="en">EN</a>
       </nav>
     </div>
@@ -28,36 +32,262 @@
 
   <main>
     <section class="hero">
+      <div class="hero-art"><img class="hero-bg" src="assets/hero.jpg" alt="" width="1920" height="814" fetchpriority="high" /></div>
+      <div class="wrap hero-in">
+        <div class="hero-copy">
+          <a class="chip" href="#novita"><span class="badge">BETA</span>Novità 0.8.0: tutorial guidato e boss veri</a>
+          <h1 class="sr">Spire Wars</h1>
+          <img class="logo" src="assets/title.png" alt="Spire Wars" width="900" height="358" />
+          <p class="lead">Strategia in tempo reale su una scacchiera fantasy: ogni torre addestra soldati, tu guidi le ondate, fondi nuove torri e abbatti quelle nemiche. Vince chi resta in piedi!</p>
+          <div class="actions">
+            <a class="btn" href="mailto:axelfolie@gmail.com?subject=Beta%20Spire%20Wars"><img class="bi" src="assets/icons/war_horn.png" alt="" width="80" height="80" loading="lazy" />Partecipa alla beta</a>
+            <a class="btn secondary" href="#avventura"><img class="bi" src="assets/icons/map.png" alt="" width="80" height="80" loading="lazy" />Scopri l'Avventura</a>
+          </div>
+        </div>
+      </div>
       <div class="wrap">
-        <img class="logo" src="assets/title.png" alt="Spire Wars" width="900" height="358" />
-        <span class="badge">BETA</span>
-        <p class="lead">Strategia in tempo reale su una scacchiera fantasy: ogni torre addestra soldati, tu guidi le ondate, fondi nuove torri e abbatti quelle nemiche. Vince chi resta in piedi.</p>
-        <a class="btn" href="mailto:axelfolie@gmail.com?subject=Beta%20Spire%20Wars">Partecipa alla beta</a>
+        <ul class="stats">
+          <li><img class="ic" src="assets/icons/army.png" alt="" width="80" height="80" loading="lazy" /><strong>1200</strong><span>soldati in campo</span></li>
+          <li><img class="ic" src="assets/icons/map.png" alt="" width="80" height="80" loading="lazy" /><strong>6 mondi</strong><span>livelli infiniti</span></li>
+          <li><img class="ic" src="assets/icons/skull.png" alt="" width="80" height="80" loading="lazy" /><strong>Boss</strong><span>con cittadella</span></li>
+          <li><img class="ic" src="assets/icons/online.png" alt="" width="80" height="80" loading="lazy" /><strong>Online</strong><span>1v1 · 2v2 · tutti</span></li>
+        </ul>
       </div>
     </section>
-    <section>
+
+    <section id="gioco" class="band">
       <div class="wrap">
-        <div class="cards">
-          <div class="card"><h3>Ondate di soldatini</h3><p>Fino a 1000 soldati in campo: comanda eserciti interi con un tocco, seleziona un'area o fissa un punto di raduno.</p></div>
-          <div class="card"><h3>Torre dopo torre</h3><p>L'oro arriva dalle uccisioni. Compra costruttori, fonda torri nelle caselle libere e potenziale con un tocco.</p></div>
-          <div class="card"><h3>Nebbia di guerra</h3><p>Non sai dove sia il nemico: esplora, sorprendi, difendi. Gli angoli di partenza cambiano ogni partita.</p></div>
-          <div class="card"><h3>1v1, 2v2, tutti contro tutti</h3><p>Contro il computer per allenarti, oppure online contro altri giocatori per scalare le leghe, da Legno a Campione.</p></div>
+        <header class="head"><span class="eyebrow">Come si gioca</span><h2>Facile da imparare, difficile da fermare</h2></header>
+        <ol class="steps">
+          <li class="step">
+            <span class="num">1</span><img class="ic big" src="assets/icons/tower.png" alt="" width="80" height="80" loading="lazy" />
+            <h3>Le torri addestrano</h3><p>Ogni torre sforna un soldato al secondo. Più torri hai, più grande è l'esercito.</p>
+          </li>
+          <li class="step">
+            <span class="num">2</span><img class="ic big" src="assets/icons/builder.png" alt="" width="80" height="80" loading="lazy" />
+            <h3>Fonda nuove torri</h3><p>Compra un Costruttore con l'oro e mandalo su una casella libera: lì sorge una nuova torre.</p>
+          </li>
+          <li class="step">
+            <span class="num">3</span><img class="ic big" src="assets/icons/swords.png" alt="" width="80" height="80" loading="lazy" />
+            <h3>Guida le ondate</h3><p>Un tocco su «Tutte», un tocco sulla mappa: i soldati marciano e combattono tutto ciò che incontrano.</p>
+          </li>
+          <li class="step">
+            <span class="num">4</span><img class="ic big" src="assets/icons/anvil.png" alt="" width="80" height="80" loading="lazy" />
+            <h3>Potenzia e difendi</h3><p>Ogni nemico abbattuto dà oro: rendi più forte l'esercito e chiudi i soldati nelle torri a tirare frecce.</p>
+          </li>
+        </ol>
+        <div class="split">
+          <div class="device"><img src="assets/shot_it_tutorial.jpg" alt="Il tutorial: una carta spiega il passo e una freccia dorata indica la casella dove costruire" width="1280" height="720" loading="lazy" /></div>
+          <div class="copy">
+            <span class="tag">Nuovo</span>
+            <h2>Il tutorial ti prende per mano</h2>
+            <p>Prima del livello 1 una vera partita guidata, in 10 passi: una carta ti dice cosa fare, una freccia dorata ti indica cosa toccare e il nemico aspetta finché non sei pronto. Si può saltare o rigiocare quando vuoi da «Come si gioca».</p>
+            <ul class="ticks"><li><img class="tick" src="assets/icons/check.png" alt="" width="80" height="80" loading="lazy" />10 passi in una partita vera</li><li><img class="tick" src="assets/icons/check.png" alt="" width="80" height="80" loading="lazy" />Frecce su tasti, torri e caselle</li><li><img class="tick" src="assets/icons/check.png" alt="" width="80" height="80" loading="lazy" />50 monete alla prima vittoria</li></ul>
+          </div>
         </div>
-        <h2>Immagini</h2>
-        <div class="shots">
-          <img src="assets/shot_it_2_battle.jpg" alt="Quattro eserciti si scontrano al centro della scacchiera" loading="lazy" width="1280" height="720" />
-          <img src="assets/shot_it_3_upgrades.jpg" alt="Una torre con i tasti di potenziamento sopra" loading="lazy" width="1280" height="720" />
-          <img src="assets/shot_it_1_menu.jpg" alt="Menu principale" loading="lazy" width="1280" height="720" />
-          <img src="assets/shot_it_4_ranking.jpg" alt="Le leghe della classifica" loading="lazy" width="1280" height="720" />
+      </div>
+    </section>
+
+    <section id="avventura" class="band alt">
+      <div class="wrap">
+        <div class="split rev">
+          <div class="device tilt"><img src="assets/shot_it_map.jpg" alt="La mappa dell'Avventura nel mondo del Prato, con il sentiero e i livelli" width="1280" height="720" loading="lazy" /></div>
+          <div class="copy">
+            <span class="eyebrow">Avventura</span>
+            <h2>Una mappa che non finisce mai</h2>
+            <p>Segui il sentiero livello dopo livello attraverso sei mondi che si ripetono sempre più difficili. Ogni livello dà fino a tre stelle, le stelle riempiono forzieri e ogni dieci livelli ti aspetta un boss.</p>
+            <ul class="points">
+            <li><img class="ic" src="assets/icons/star.png" alt="" width="80" height="80" loading="lazy" /><div><strong>Tre stelle per livello</strong><span>vinci, tieni le torri, perdine poche</span></div></li>
+            <li><img class="ic" src="assets/icons/hp.png" alt="" width="80" height="80" loading="lazy" /><div><strong>Cuori</strong><span>cinque tentativi che si ricaricano col tempo</span></div></li>
+            <li><img class="ic" src="assets/icons/chest_gold.png" alt="" width="80" height="80" loading="lazy" /><div><strong>Forzieri</strong><span>monete, gemme e frammenti di skin</span></div></li>
+            </ul>
+          </div>
         </div>
-        <h2>Beta su Google Play</h2>
-        <p>Spire Wars è in beta chiusa su Google Play. Per partecipare scrivi a <a href="mailto:axelfolie@gmail.com?subject=Beta%20Spire%20Wars">axelfolie@gmail.com</a> indicando l'email del tuo account Google.</p>
+        <h3 class="sub">Sei mondi, sei boss</h3>
+        <ul class="worlds">
+          <li class="world">
+            <img class="wbg" src="assets/world_0.jpg" alt="" width="640" height="480" loading="lazy" />
+            <span class="wnum">Mondo 1</span>
+            <strong>Prato</strong>
+            <span class="boss"><img class="sk" src="assets/icons/skull.png" alt="" width="80" height="80" loading="lazy" />il Guardiano dei Rovi</span>
+          </li>
+          <li class="world">
+            <img class="wbg" src="assets/world_1.jpg" alt="" width="640" height="480" loading="lazy" />
+            <span class="wnum">Mondo 2</span>
+            <strong>Deserto</strong>
+            <span class="boss"><img class="sk" src="assets/icons/skull.png" alt="" width="80" height="80" loading="lazy" />il Sultano delle Sabbie</span>
+          </li>
+          <li class="world">
+            <img class="wbg" src="assets/world_2.jpg" alt="" width="640" height="480" loading="lazy" />
+            <span class="wnum">Mondo 3</span>
+            <strong>Canyon rosso</strong>
+            <span class="boss"><img class="sk" src="assets/icons/skull.png" alt="" width="80" height="80" loading="lazy" />il Signore della Gola Rossa</span>
+          </li>
+          <li class="world">
+            <img class="wbg" src="assets/world_3.jpg" alt="" width="640" height="480" loading="lazy" />
+            <span class="wnum">Mondo 4</span>
+            <strong>Palude</strong>
+            <span class="boss"><img class="sk" src="assets/icons/skull.png" alt="" width="80" height="80" loading="lazy" />la Strega della Palude</span>
+          </li>
+          <li class="world">
+            <img class="wbg" src="assets/world_4.jpg" alt="" width="640" height="480" loading="lazy" />
+            <span class="wnum">Mondo 5</span>
+            <strong>Terre innevate</strong>
+            <span class="boss"><img class="sk" src="assets/icons/skull.png" alt="" width="80" height="80" loading="lazy" />lo Jarl del Gelo</span>
+          </li>
+          <li class="world">
+            <img class="wbg" src="assets/world_5.jpg" alt="" width="640" height="480" loading="lazy" />
+            <span class="wnum">Mondo 6</span>
+            <strong>Vulcano</strong>
+            <span class="boss"><img class="sk" src="assets/icons/skull.png" alt="" width="80" height="80" loading="lazy" />il Re delle Ceneri</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="boss-band">
+      <div class="wrap split">
+        <div class="device glow"><img src="assets/shot_it_boss.jpg" alt="La cittadella del Guardiano dei Rovi con il cerchio runico rosso e gli arcieri" width="1280" height="720" loading="lazy" /></div>
+        <div class="copy">
+          <span class="eyebrow red"><img class="ei" src="assets/icons/skull.png" alt="" width="80" height="80" loading="lazy" />Boss</span>
+          <h2>Abbatti la cittadella</h2>
+          <p>Ogni mondo finisce con un boss che ha un nome e comanda da una cittadella: vita doppia, armatura, arcieri sulle mura e un luogotenente al suo fianco. La musica si fa cupa, il nome brilla sopra le mura… e la prima vittoria dà un forziere d'oro e gemme.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="wrap">
+        <header class="head"><span class="eyebrow">Modalità speciali</span><h2>Ogni livello, una sfida diversa</h2><p>Oltre alla conquista classica, i livelli speciali cambiano le regole: riconoscili sulla mappa dalla gemma esagonale.</p></header>
+        <ul class="modes">
+          <li class="mode"><img class="ic" src="assets/icons/hourglass.png" alt="" width="80" height="80" loading="lazy" /><div><h3>Corsa contro il tempo</h3><p>Vinci prima che scada il tempo.</p></div></li>
+          <li class="mode"><img class="ic" src="assets/icons/coin.png" alt="" width="80" height="80" loading="lazy" /><div><h3>Economia di guerra</h3><p>Nessuno guadagna oro: spendi bene il tesoro iniziale.</p></div></li>
+          <li class="mode"><img class="ic" src="assets/icons/tower.png" alt="" width="80" height="80" loading="lazy" /><div><h3>Fortezza</h3><p>Niente costruttori: difendi e potenzia le torri che hai.</p></div></li>
+          <li class="mode"><img class="ic" src="assets/icons/star.png" alt="" width="80" height="80" loading="lazy" /><div><h3>Santuari magici</h3><p>Caselle luminose che danno poteri alla loro torre.</p></div></li>
+          <li class="mode"><img class="ic" src="assets/icons/crown.png" alt="" width="80" height="80" loading="lazy" /><div><h3>Proteggi il re</h3><p>Se cade il castello con la corona, quell'esercito è fuori.</p></div></li>
+          <li class="mode"><img class="ic" src="assets/icons/shield_star.png" alt="" width="80" height="80" loading="lazy" /><div><h3>Resisti alle ondate</h3><p>Tieni duro fino alla fine: ogni ondata è più forte.</p></div></li>
+          <li class="mode"><img class="ic" src="assets/icons/gem_chest.png" alt="" width="80" height="80" loading="lazy" /><div><h3>Caccia al tesoro</h3><p>Forzieri nascosti nella nebbia: chi ne prende di più vince.</p></div></li>
+          <li class="mode"><img class="ic" src="assets/icons/map.png" alt="" width="80" height="80" loading="lazy" /><div><h3>Buio totale</h3><p>La nebbia dimentica: vedi solo ciò che vedono i tuoi soldati.</p></div></li>
+          <li class="mode"><img class="ic" src="assets/icons/skull.png" alt="" width="80" height="80" loading="lazy" /><div><h3>Tutti contro te</h3><p>Tre eserciti alleati ti attaccano insieme.</p></div></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="band alt">
+      <div class="wrap">
+        <header class="head"><span class="eyebrow">In battaglia</span><h2>Strategia vera, a colpi di dito</h2></header>
+        <div class="medias">
+          <figure class="media">
+            <a href="assets/shot_it_battle.jpg"><img src="assets/shot_it_battle.jpg" alt="Quattro eserciti si scontrano al centro della scacchiera" width="1280" height="720" loading="lazy" /></a>
+            <figcaption><h3>Eserciti enormi</h3><p>Fino a 1200 soldati sulla scacchiera, animati uno per uno. Selezionali tutti, a gruppi o con un'area.</p></figcaption>
+          </figure>
+          <figure class="media">
+            <a href="assets/shot_it_upgrades.jpg"><img src="assets/shot_it_upgrades.jpg" alt="Una torre con i tasti di potenziamento sopra" width="1280" height="720" loading="lazy" /></a>
+            <figcaption><h3>Potenziamenti</h3><p>Attacco, vita, armatura, velocità e portata per l'esercito; vita, mura e addestramento per ogni torre.</p></figcaption>
+          </figure>
+          <figure class="media">
+            <a href="assets/shot_garrison.jpg"><img src="assets/shot_garrison.jpg" alt="Una torre con i soldati sulle mura respinge un'ondata nemica" width="1280" height="720" loading="lazy" /></a>
+            <figcaption><h3>Guarnigioni</h3><p>Chiudi fino a 10 soldati in una torre: tirano frecce e olio bollente a chi si avvicina.</p></figcaption>
+          </figure>
+        </div>
+        <p class="fog"><img class="ic" src="assets/icons/flame.png" alt="" width="80" height="80" loading="lazy" />Nebbia di guerra: non sai dove sia il nemico finché non lo vedi.</p>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="wrap split">
+        <div class="device"><img src="assets/shot_it_ranking.jpg" alt="Le leghe della classifica online" width="1280" height="720" loading="lazy" /></div>
+        <div class="copy">
+          <span class="eyebrow"><img class="ei" src="assets/icons/trophy.png" alt="" width="80" height="80" loading="lazy" />Online</span>
+          <h2>Scala le leghe</h2>
+          <p>Sfida altre persone in 1 contro 1, 2 contro 2 o tutti contro tutti. Ogni vittoria vale trofei: sali di lega, da Legno a Campione, e conquista la classifica mondiale. C'è anche la classifica dell'Avventura.</p>
+        </div>
+      </div>
+      <div class="wrap">
+        <ul class="leagues">
+          <li><img class="lg" src="assets/icons/league_0.png" alt="" width="80" height="80" loading="lazy" /><span>Legno</span></li>
+          <li><img class="lg" src="assets/icons/league_1.png" alt="" width="80" height="80" loading="lazy" /><span>Bronzo</span></li>
+          <li><img class="lg" src="assets/icons/league_2.png" alt="" width="80" height="80" loading="lazy" /><span>Argento</span></li>
+          <li><img class="lg" src="assets/icons/league_3.png" alt="" width="80" height="80" loading="lazy" /><span>Oro</span></li>
+          <li><img class="lg" src="assets/icons/league_4.png" alt="" width="80" height="80" loading="lazy" /><span>Platino</span></li>
+          <li><img class="lg" src="assets/icons/league_5.png" alt="" width="80" height="80" loading="lazy" /><span>Diamante</span></li>
+          <li><img class="lg" src="assets/icons/league_6.png" alt="" width="80" height="80" loading="lazy" /><span>Campione</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="band alt">
+      <div class="wrap split rev">
+        <div class="stack">
+          <img class="back" src="assets/shot_it_daily.jpg" alt="I premi giornalieri dei sette giorni" width="1280" height="720" loading="lazy" />
+          <img class="front" src="assets/shot_it_collection.jpg" alt="La collezione delle skin dell'esercito" width="1280" height="720" loading="lazy" />
+        </div>
+        <div class="copy">
+          <span class="eyebrow"><img class="ei" src="assets/icons/collection.png" alt="" width="80" height="80" loading="lazy" />Collezione</span>
+          <h2>Il tuo esercito, il tuo stile</h2>
+          <p>Skin per l'esercito e per le torri, cornici e titoli per il profilo. Si ottengono con le monete, le gemme, i forzieri e completando i mondi; ogni giorno ci sono missioni e premi di accesso.</p>
+          <ul class="chests">
+          <li><img class="ch" src="assets/icons/chest_wood.png" alt="" width="80" height="80" loading="lazy" /><span>Legno</span></li>
+          <li><img class="ch" src="assets/icons/chest_silver.png" alt="" width="80" height="80" loading="lazy" /><span>Argento</span></li>
+          <li><img class="ch" src="assets/icons/chest_gold.png" alt="" width="80" height="80" loading="lazy" /><span>Oro</span></li>
+          <li><img class="ch" src="assets/icons/chest_legendary.png" alt="" width="80" height="80" loading="lazy" /><span>Leggendario</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="wrap">
+        <header class="head"><h2>Immagini</h2><p>Tocca un'immagine per ingrandirla</p></header>
+        <div class="gallery">
+          <a href="assets/shot_it_battle.jpg"><img src="assets/shot_it_battle.jpg" alt="Quattro eserciti si scontrano al centro della scacchiera" width="1280" height="720" loading="lazy" /></a>
+          <a href="assets/shot_it_map.jpg"><img src="assets/shot_it_map.jpg" alt="La mappa dell'Avventura nel mondo del Prato, con il sentiero e i livelli" width="1280" height="720" loading="lazy" /></a>
+          <a href="assets/shot_it_boss.jpg"><img src="assets/shot_it_boss.jpg" alt="La cittadella del Guardiano dei Rovi con il cerchio runico rosso e gli arcieri" width="1280" height="720" loading="lazy" /></a>
+          <a href="assets/shot_it_tutorial.jpg"><img src="assets/shot_it_tutorial.jpg" alt="Il tutorial: una carta spiega il passo e una freccia dorata indica la casella dove costruire" width="1280" height="720" loading="lazy" /></a>
+          <a href="assets/shot_it_upgrades.jpg"><img src="assets/shot_it_upgrades.jpg" alt="Una torre con i tasti di potenziamento sopra" width="1280" height="720" loading="lazy" /></a>
+          <a href="assets/shot_garrison.jpg"><img src="assets/shot_garrison.jpg" alt="Una torre con i soldati sulle mura respinge un'ondata nemica" width="1280" height="720" loading="lazy" /></a>
+          <a href="assets/shot_it_collection.jpg"><img src="assets/shot_it_collection.jpg" alt="La collezione delle skin dell'esercito" width="1280" height="720" loading="lazy" /></a>
+          <a href="assets/shot_it_daily.jpg"><img src="assets/shot_it_daily.jpg" alt="I premi giornalieri dei sette giorni" width="1280" height="720" loading="lazy" /></a>
+          <a href="assets/shot_it_ranking.jpg"><img src="assets/shot_it_ranking.jpg" alt="Le leghe della classifica online" width="1280" height="720" loading="lazy" /></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="novita" class="band alt">
+      <div class="wrap">
+        <div class="scroll">
+          <span class="eyebrow">Versione 0.8.0 beta</span>
+          <h2>Novità</h2>
+          <ul class="ticks news">
+          <li><img class="tick" src="assets/icons/check.png" alt="" width="80" height="80" loading="lazy" />Un tutorial guidato prima dell'Avventura</li>
+          <li><img class="tick" src="assets/icons/check.png" alt="" width="80" height="80" loading="lazy" />Boss veri: un nome per mondo, cittadella con arcieri e musica sua</li>
+          <li><img class="tick" src="assets/icons/check.png" alt="" width="80" height="80" loading="lazy" />Avventura un po' più impegnativa</li>
+          <li><img class="tick" src="assets/icons/check.png" alt="" width="80" height="80" loading="lazy" />Guarnigioni più rapide: un tocco riempie la torre e una scritta dorata conta i soldati</li>
+          <li><img class="tick" src="assets/icons/check.png" alt="" width="80" height="80" loading="lazy" />Obiettivi del livello consultabili in partita</li>
+          <li><img class="tick" src="assets/icons/check.png" alt="" width="80" height="80" loading="lazy" />Livelli della mappa con forme diverse per ogni tipo</li>
+          <li><img class="tick" src="assets/icons/check.png" alt="" width="80" height="80" loading="lazy" />Premi più lunghi da ottenere, alcuni solo nei livelli avanzati</li>
+          <li><img class="tick" src="assets/icons/check.png" alt="" width="80" height="80" loading="lazy" />Fino a 1200 soldati in campo</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="join">
+      <div class="wrap join-in">
+        <img class="app" src="assets/icon-256.png" alt="" width="256" height="256" loading="lazy" />
+        <div>
+          <h2>Entra nella beta</h2>
+          <p>Spire Wars è in beta chiusa su Google Play, gratis. Scrivi a <a href="mailto:axelfolie@gmail.com?subject=Beta%20Spire%20Wars">axelfolie@gmail.com</a> con l'email del tuo account Google e ti aggiungiamo ai tester. Le tue segnalazioni rendono il gioco migliore!</p>
+          <a class="btn" href="mailto:axelfolie@gmail.com?subject=Beta%20Spire%20Wars"><img class="bi" src="assets/icons/war_horn.png" alt="" width="80" height="80" loading="lazy" />Partecipa alla beta</a>
+          <p class="small">Gioco gratuito con pubblicità. L'online richiede una connessione e un account gratuito.</p>
+        </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <div class="wrap">
+    <div class="wrap foot">
+      <a class="brand" href="./"><img src="assets/icon-64.png" alt="" width="40" height="40" loading="lazy" /><span>Spire Wars</span></a>
       <nav aria-label="Note legali">
         <a href="./">Home</a>
         <a href="privacy.html">Privacy</a>
@@ -65,7 +295,7 @@
         <a href="mailto:axelfolie@gmail.com">Contatti</a>
         <a href="en/index.html" hreflang="en" lang="en">English</a>
       </nav>
-      <p>© 2026 Axel Production (axelfolie)</p>
+      <p>© 2026 Axel Production (axelfolie) · v0.8.0 beta</p>
     </div>
   </footer>
 </body>

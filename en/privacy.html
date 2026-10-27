@@ -6,11 +6,14 @@
   <title>Privacy policy – Spire Wars</title>
   <meta name="description" content="How Spire Wars handles data: online accounts, ranking, ads with consent." />
   <meta name="theme-color" content="#0d1a33" />
+  <meta property="og:type" content="website" />
   <meta property="og:title" content="Privacy policy – Spire Wars" />
   <meta property="og:description" content="How Spire Wars handles data: online accounts, ranking, ads with consent." />
   <meta property="og:image" content="https://spirewars.github.io/assets/social.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" href="../favicon.png" />
   <link rel="alternate" hreflang="it" href="../privacy.html" />
+  <link rel="preload" href="../assets/fonts/LilitaOne-Regular.ttf" as="font" type="font/ttf" crossorigin />
   <link rel="stylesheet" href="../assets/style.css" />
 </head>
 <body>
@@ -18,9 +21,10 @@
     <div class="wrap">
       <a class="brand" href="./"><img src="../assets/icon-64.png" alt="" width="40" height="40" /><span>Spire Wars</span></a>
       <nav class="nav" aria-label="Main">
-        <a href="./">Home</a>
+        <a class="hide-sm" href="./#gioco">The game</a>
+        <a class="hide-sm" href="./#avventura">Adventure</a>
+        <a class="hide-sm" href="./#novita">What's new</a>
         <a href="privacy.html" aria-current="page">Privacy</a>
-        <a href="delete-account.html">Delete account</a>
         <a class="lang" href="../privacy.html" hreflang="it" lang="it">IT</a>
       </nav>
     </div>
@@ -30,7 +34,7 @@
     <div class="wrap">
       <span class="eyebrow">Privacy policy</span>
       <h1>Privacy</h1>
-      <p class="updated">Last updated: 24 October 2026</p>
+      <p class="updated">Last updated: 27 October 2026</p>
 
       <p>This policy covers the game <strong>Spire Wars</strong> for Android (package <code>com.axelproduction.spirewars</code>) and this website. Under Articles 13 and 14 of Regulation (EU) 2016/679 (GDPR) it explains which personal data are processed, by whom, why and for how long.</p>
 
@@ -40,7 +44,7 @@
       <h2>In short</h2>
       <ul>
         <li>Playing against the computer needs no account: settings and progress stay on your phone.</li>
-        <li>Playing online needs an account (email, player name, password). Your player name and trophies are visible to other players in the world ranking and in matches.</li>
+        <li>Playing online needs an account (email, player name, password). Your player name, trophies and Adventure level are visible to other players in the world rankings; your name and actions also in online matches.</li>
         <li>Online play goes through the <strong>GD-Sync</strong> service, which links the phones together and stores the accounts.</li>
         <li>At the end of matches a video ad from <strong>Google AdMob</strong> may appear. In the EU, the UK and Switzerland the game asks for your consent first, and you can change it at any time.</li>
         <li>You can delete your account at any time in the game or by writing to us (<a href="delete-account.html">how</a>).</li>
@@ -54,8 +58,8 @@
         <tbody>
           <tr><td>Settings (language, volumes), coins, trophies, match statistics, default player name</td><td>Only on your phone (app storage)</td><td>To run the game and show your progress</td><td>Performance of the service you ask for (Art. 6(1)(b))</td></tr>
           <tr><td>Account: email, player name, password</td><td>GD-Sync, the online service provider, on behalf of the controller</td><td>To create the account, sign you in, recover it</td><td>Performance of the service (Art. 6(1)(b))</td></tr>
-          <tr><td>Online progress: trophies, records, coins, matches played and won</td><td>GD-Sync, linked to your account</td><td>To find your progress on another phone</td><td>Performance of the service (Art. 6(1)(b))</td></tr>
-          <tr><td>World ranking: player name, trophies, league, position</td><td>GD-Sync; visible to all players</td><td>Competitive ranking</td><td>Performance of the service (Art. 6(1)(b))</td></tr>
+          <tr><td>Online progress: trophies, records, coins, gems, matches played and won, Adventure level and stars, collection items, achievements</td><td>GD-Sync, linked to your account</td><td>To find your progress on another phone</td><td>Performance of the service (Art. 6(1)(b))</td></tr>
+          <tr><td>World rankings: player name, trophies, league and position (online); level reached and stars (Adventure)</td><td>GD-Sync; visible to all players</td><td>Competitive rankings</td><td>Performance of the service (Art. 6(1)(b))</td></tr>
           <tr><td>Online matches: player name, chosen faction, game commands, IP address and technical connection data</td><td>GD-Sync (servers relaying the data to the other players of the match)</td><td>To let several phones play together, detect disconnections and sync errors</td><td>Performance of the service (Art. 6(1)(b)); legitimate interest in security (Art. 6(1)(f))</td></tr>
           <tr><td>Advertising data: advertising ID, IP address, device information and interaction with ads</td><td>Google (AdMob), as an independent controller</td><td>To show and measure ads; personalised ads only with your consent</td><td>Consent (Art. 6(1)(a)) for personalised ads and device access; Google's legitimate interest in security and fraud prevention</td></tr>
           <tr><td>Emails you send us</td><td>The controller's mailbox</td><td>To answer, handle deletion and data-rights requests</td><td>Legitimate interest (Art. 6(1)(f)); legal obligation for GDPR requests (Art. 6(1)(c))</td></tr>
@@ -105,7 +109,8 @@
   </main>
 
   <footer>
-    <div class="wrap">
+    <div class="wrap foot">
+      <a class="brand" href="./"><img src="../assets/icon-64.png" alt="" width="40" height="40" loading="lazy" /><span>Spire Wars</span></a>
       <nav aria-label="Legal">
         <a href="./">Home</a>
         <a href="privacy.html">Privacy</a>
@@ -113,7 +118,7 @@
         <a href="mailto:axelfolie@gmail.com">Contact</a>
         <a href="../privacy.html" hreflang="it" lang="it">Italiano</a>
       </nav>
-      <p>© 2026 Axel Production (axelfolie)</p>
+      <p>© 2026 Axel Production (axelfolie) · v0.8.0 beta</p>
     </div>
   </footer>
 </body>
